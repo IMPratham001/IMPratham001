@@ -53,6 +53,10 @@ const pratham = {
 
 <div align="center">
 
+<img src="https://skillicons.dev/icons?i=ts,js,dart,cs,cpp,nextjs,react,flutter,expo,tailwind,dotnet,nodejs,postgres,redis,prisma,sqlite,docker,vercel,cloudflare,git,linux&perline=11" alt="tech stack icons"/>
+
+<br/><br/>
+
 **Languages**
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
@@ -103,6 +107,12 @@ const pratham = {
 <img height="165" src="https://streak-stats.demolab.com?user=IMPratham001&hide_border=true&background=0d1117&stroke=E62429&ring=FFD700&fire=E62429&currStreakLabel=FFD700&sideLabels=c9d1d9&dates=c9d1d9&currStreakNum=FFD700&sideNums=c9d1d9" alt="streak"/>
 
 <img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=IMPratham001&layout=compact&langs_count=8&hide_border=true&title_color=FFD700&text_color=c9d1d9&bg_color=0d1117" alt="top langs"/>
+
+<br/><br/>
+
+<img height="150" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=IMPratham001&theme=github_dark" alt="repos per language"/>
+<img height="150" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=IMPratham001&theme=github_dark" alt="most commit language"/>
+<img height="150" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=IMPratham001&theme=github_dark&utcOffset=5.5" alt="productive time"/>
 
 </div>
 

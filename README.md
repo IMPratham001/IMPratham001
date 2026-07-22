@@ -1,6 +1,6 @@
 <!-- ========================= HERO ========================= -->
 <a href="#">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:8B0000,100:E62429&height=200&section=header&text=Pratham&fontSize=70&fontColor=FFD700&fontAlignY=35&desc=Genius%20optional.%20Builder%20mandatory.&descAlignY=58&descSize=18&animation=fadeIn" alt="header"/>
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:003554,100:0A84FF&height=200&section=header&text=Pratham&fontSize=70&fontColor=00E5FF&fontAlignY=35&desc=Genius%20optional.%20Builder%20mandatory.&descAlignY=58&descSize=18&animation=fadeIn" alt="header"/>
 </a>
 
 <div align="center">
@@ -12,15 +12,15 @@
 
 <!-- Animated typing tagline -->
 <a href="https://github.com/IMPratham001">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=900&color=FFD700&center=true&vCenter=true&width=760&lines=Booting+J.A.R.V.I.S.+...;All+systems+online.+Welcome+back%2C+sir.;Full-Stack+%2B+Mobile+Engineer;I+build+the+suits+%E2%80%94+web%2C+mobile+%26+backend;Genius.+Builder.+Problem-Solver.;At+your+service." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=900&color=00E5FF&center=true&vCenter=true&width=760&lines=Booting+J.A.R.V.I.S.+...;All+systems+online.+Welcome+back%2C+sir.;Full-Stack+%2B+Mobile+Engineer;I+build+the+suits+%E2%80%94+web%2C+mobile+%26+backend;Genius.+Builder.+Problem-Solver.;At+your+service." alt="Typing SVG" />
 </a>
 
 <br/>
 
 <!-- Profile views + follow -->
-<img src="https://komarev.com/ghpvc/?username=IMPratham001&label=Suit%20Diagnostics&color=E62429&style=for-the-badge" alt="views"/>
+<img src="https://komarev.com/ghpvc/?username=IMPratham001&label=Suit%20Diagnostics&color=0A84FF&style=for-the-badge" alt="views"/>
 <a href="https://github.com/IMPratham001?tab=followers">
-  <img src="https://img.shields.io/github/followers/IMPratham001?label=Follow&style=for-the-badge&color=FFD700&labelColor=0d1117" alt="followers"/>
+  <img src="https://img.shields.io/github/followers/IMPratham001?label=Follow&style=for-the-badge&color=00E5FF&labelColor=0d1117" alt="followers"/>
 </a>
 
 </div>
@@ -103,10 +103,10 @@ const pratham = {
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api?username=IMPratham001&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&title_color=FFD700&text_color=c9d1d9&icon_color=E62429&bg_color=0d1117" alt="stats"/>
-<img height="165" src="https://streak-stats.demolab.com?user=IMPratham001&hide_border=true&background=0d1117&stroke=E62429&ring=FFD700&fire=E62429&currStreakLabel=FFD700&sideLabels=c9d1d9&dates=c9d1d9&currStreakNum=FFD700&sideNums=c9d1d9" alt="streak"/>
+<img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api?username=IMPratham001&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&title_color=00E5FF&text_color=c9d1d9&icon_color=0A84FF&bg_color=0d1117" alt="stats"/>
+<img height="165" src="https://streak-stats.demolab.com?user=IMPratham001&hide_border=true&background=0d1117&stroke=0A84FF&ring=00E5FF&fire=0A84FF&currStreakLabel=00E5FF&sideLabels=c9d1d9&dates=c9d1d9&currStreakNum=00E5FF&sideNums=c9d1d9" alt="streak"/>
 
-<img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=IMPratham001&layout=compact&langs_count=8&hide_border=true&title_color=FFD700&text_color=c9d1d9&bg_color=0d1117" alt="top langs"/>
+<img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=IMPratham001&layout=compact&langs_count=8&hide_border=true&title_color=00E5FF&text_color=c9d1d9&bg_color=0d1117" alt="top langs"/>
 
 <br/><br/>
 
@@ -123,7 +123,7 @@ const pratham = {
 
 <div align="center">
 
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=IMPratham001&bg_color=0d1117&color=FFD700&line=E62429&point=FFD700&area=true&area_color=E62429&hide_border=true&custom_title=Contribution%20Output%20%E2%80%94%20last%20year" alt="activity graph"/>
+<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=IMPratham001&bg_color=0d1117&color=00E5FF&line=0A84FF&point=00E5FF&area=true&area_color=0A84FF&hide_border=true&custom_title=Contribution%20Output%20%E2%80%94%20last%20year" alt="activity graph"/>
 
 </div>
 
@@ -143,7 +143,7 @@ Full campus-management platform — web dashboard + Flutter mobile app, PostgreS
 
 `TypeScript` · `Flutter` · `PostgreSQL` · `Docker`
 
-[![Repo](https://img.shields.io/badge/Code-0d1117?style=flat-square&logo=github&logoColor=white)](https://github.com/IMPratham001/CampusIq) [![Live](https://img.shields.io/badge/Live_Demo-E62429?style=flat-square&logo=vercel&logoColor=white)](https://campusiq-landing.vercel.app/)
+[![Repo](https://img.shields.io/badge/Code-0d1117?style=flat-square&logo=github&logoColor=white)](https://github.com/IMPratham001/CampusIq) [![Live](https://img.shields.io/badge/Live_Demo-0A84FF?style=flat-square&logo=vercel&logoColor=white)](https://campusiq-landing.vercel.app/)
 
 </td>
 <td width="50%" valign="top">
@@ -153,7 +153,7 @@ Modern e-commerce storefront with a full product & checkout flow.
 
 `Next.js` · `TypeScript` · `Tailwind`
 
-[![Repo](https://img.shields.io/badge/Code-0d1117?style=flat-square&logo=github&logoColor=white)](https://github.com/IMPratham001/nutrivault-ecom1) [![Live](https://img.shields.io/badge/Live_Demo-E62429?style=flat-square&logo=vercel&logoColor=white)](https://nutrivault-ecom1.vercel.app)
+[![Repo](https://img.shields.io/badge/Code-0d1117?style=flat-square&logo=github&logoColor=white)](https://github.com/IMPratham001/nutrivault-ecom1) [![Live](https://img.shields.io/badge/Live_Demo-0A84FF?style=flat-square&logo=vercel&logoColor=white)](https://nutrivault-ecom1.vercel.app)
 
 </td>
 </tr>
@@ -208,7 +208,7 @@ A social experience app — connect, share, and stay in touch.
 <div align="center">
 
 <a href="mailto:sonipratham415@gmail.com">
-  <img src="https://img.shields.io/badge/Email-E62429?style=for-the-badge&logo=gmail&logoColor=white" alt="email"/>
+  <img src="https://img.shields.io/badge/Email-0A84FF?style=for-the-badge&logo=gmail&logoColor=white" alt="email"/>
 </a>
 <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"/>
@@ -217,13 +217,13 @@ A social experience app — connect, share, and stay in touch.
   <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="x"/>
 </a>
 <a href="https://campusiq-landing.vercel.app/">
-  <img src="https://img.shields.io/badge/Portfolio-FFD700?style=for-the-badge&logo=vercel&logoColor=black" alt="portfolio"/>
+  <img src="https://img.shields.io/badge/Portfolio-00E5FF?style=for-the-badge&logo=vercel&logoColor=black" alt="portfolio"/>
 </a>
 
 <br/><br/>
 
 <i>"Sometimes you gotta run before you can walk."</i>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:E62429,50:8B0000,100:0d1117&height=120&section=footer" alt="footer"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0A84FF,50:003554,100:0d1117&height=120&section=footer" alt="footer"/>
 
 </div>

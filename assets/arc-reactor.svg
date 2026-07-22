@@ -1,84 +1,166 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" fill="none" role="img" aria-label="Arc Reactor">
   <defs>
-    <radialGradient id="core" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#E6FBFF"/>
-      <stop offset="30%" stop-color="#7FF3FF"/>
-      <stop offset="62%" stop-color="#00E5FF"/>
-      <stop offset="85%" stop-color="#00B4D8"/>
+    <radialGradient id="core" cx="50%" cy="45%" r="60%">
+      <stop offset="0%"  stop-color="#FFFFFF"/>
+      <stop offset="22%" stop-color="#E6FBFF"/>
+      <stop offset="46%" stop-color="#7FF3FF"/>
+      <stop offset="70%" stop-color="#00E5FF"/>
+      <stop offset="88%" stop-color="#00B4D8"/>
       <stop offset="100%" stop-color="#003554"/>
     </radialGradient>
     <radialGradient id="halo" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.55"/>
-      <stop offset="55%" stop-color="#0A84FF" stop-opacity="0.16"/>
+      <stop offset="0%"  stop-color="#00E5FF" stop-opacity="0.5"/>
+      <stop offset="45%" stop-color="#0A84FF" stop-opacity="0.18"/>
       <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="coil" cx="50%" cy="20%" r="90%">
+      <stop offset="0%"  stop-color="#8becff"/>
+      <stop offset="55%" stop-color="#0a3a5c"/>
+      <stop offset="100%" stop-color="#041825"/>
+    </radialGradient>
+    <linearGradient id="spoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E6FBFF"/>
+      <stop offset="100%" stop-color="#00B4D8" stop-opacity="0"/>
+    </linearGradient>
     <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feGaussianBlur stdDeviation="3" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="softglow" x="-80%" y="-80%" width="260%" height="260%">
-      <feGaussianBlur stdDeviation="8"/>
+    <filter id="soft" x="-90%" y="-90%" width="280%" height="280%">
+      <feGaussianBlur stdDeviation="9"/>
     </filter>
   </defs>
-
-  <!-- breathing halo -->
-  <circle cx="200" cy="200" r="185" fill="url(#halo)">
-    <animate attributeName="opacity" values="0.45;1;0.45" dur="3.2s" repeatCount="indefinite"/>
-    <animateTransform attributeName="transform" type="scale" additive="sum"
-      values="1 1;1.04 1.04;1 1" dur="3.2s" repeatCount="indefinite"
-      calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1" keyTimes="0;0.5;1"
-      begin="0s"/>
+  <circle cx="200" cy="200" r="188" fill="url(#halo)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3.4s" repeatCount="indefinite"/>
   </circle>
-
-  <!-- outer segmented coil ring (slow clockwise) -->
+  <circle cx="200" cy="200" fill="none" stroke="#00E5FF" stroke-width="2">
+    <animate attributeName="r" values="58;186" dur="3.6s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.6 0.4 1" keyTimes="0;1"/>
+    <animate attributeName="opacity" values="0.55;0" dur="3.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="200" fill="none" stroke="#7FF3FF" stroke-width="1.6">
+    <animate attributeName="r" values="58;186" dur="3.6s" begin="1.8s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.6 0.4 1" keyTimes="0;1"/>
+    <animate attributeName="opacity" values="0.5;0" dur="3.6s" begin="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="200" r="176" stroke="#0A84FF" stroke-width="2" opacity="0.6"/>
+  <circle cx="200" cy="200" r="163" stroke="#00B4D8" stroke-width="1.2" opacity="0.4"/>
+  <g opacity="0.85">
+    <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="360 200 200" dur="60s" repeatCount="indefinite"/>
+    <line x1="365.0" y1="200.0" x2="372.0" y2="200.0" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="364.1" y1="217.2" x2="371.1" y2="218.0" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="361.4" y1="234.3" x2="368.2" y2="235.8" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="356.9" y1="251.0" x2="363.6" y2="253.2" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="350.7" y1="267.1" x2="357.1" y2="270.0" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="342.9" y1="282.5" x2="349.0" y2="286.0" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="333.5" y1="297.0" x2="339.2" y2="301.1" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="322.6" y1="310.4" x2="327.8" y2="315.1" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="310.4" y1="322.6" x2="315.1" y2="327.8" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="297.0" y1="333.5" x2="301.1" y2="339.2" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="282.5" y1="342.9" x2="286.0" y2="349.0" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="267.1" y1="350.7" x2="270.0" y2="357.1" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="251.0" y1="356.9" x2="253.2" y2="363.6" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="234.3" y1="361.4" x2="235.8" y2="368.2" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="217.2" y1="364.1" x2="218.0" y2="371.1" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="200.0" y1="365.0" x2="200.0" y2="372.0" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="182.8" y1="364.1" x2="182.0" y2="371.1" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="165.7" y1="361.4" x2="164.2" y2="368.2" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="149.0" y1="356.9" x2="146.8" y2="363.6" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="132.9" y1="350.7" x2="130.0" y2="357.1" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="117.5" y1="342.9" x2="114.0" y2="349.0" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="103.0" y1="333.5" x2="98.9" y2="339.2" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="89.6" y1="322.6" x2="84.9" y2="327.8" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="77.4" y1="310.4" x2="72.2" y2="315.1" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="66.5" y1="297.0" x2="60.8" y2="301.1" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="57.1" y1="282.5" x2="51.0" y2="286.0" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="49.3" y1="267.1" x2="42.9" y2="270.0" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="43.1" y1="251.0" x2="36.4" y2="253.2" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="38.6" y1="234.3" x2="31.8" y2="235.8" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="35.9" y1="217.2" x2="28.9" y2="218.0" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="35.0" y1="200.0" x2="28.0" y2="200.0" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="35.9" y1="182.8" x2="28.9" y2="182.0" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="38.6" y1="165.7" x2="31.8" y2="164.2" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="43.1" y1="149.0" x2="36.4" y2="146.8" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="49.3" y1="132.9" x2="42.9" y2="130.0" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="57.1" y1="117.5" x2="51.0" y2="114.0" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="66.5" y1="103.0" x2="60.8" y2="98.9" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="77.4" y1="89.6" x2="72.2" y2="84.9" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="89.6" y1="77.4" x2="84.9" y2="72.2" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="103.0" y1="66.5" x2="98.9" y2="60.8" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="117.5" y1="57.1" x2="114.0" y2="51.0" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="132.9" y1="49.3" x2="130.0" y2="42.9" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="149.0" y1="43.1" x2="146.8" y2="36.4" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="165.7" y1="38.6" x2="164.2" y2="31.8" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="182.8" y1="35.9" x2="182.0" y2="28.9" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="200.0" y1="35.0" x2="200.0" y2="28.0" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="217.2" y1="35.9" x2="218.0" y2="28.9" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="234.3" y1="38.6" x2="235.8" y2="31.8" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="251.0" y1="43.1" x2="253.2" y2="36.4" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="267.1" y1="49.3" x2="270.0" y2="42.9" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="282.5" y1="57.1" x2="286.0" y2="51.0" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="297.0" y1="66.5" x2="301.1" y2="60.8" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="310.4" y1="77.4" x2="315.1" y2="72.2" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="322.6" y1="89.6" x2="327.8" y2="84.9" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="333.5" y1="103.0" x2="339.2" y2="98.9" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="342.9" y1="117.5" x2="349.0" y2="114.0" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="350.7" y1="132.9" x2="357.1" y2="130.0" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="356.9" y1="149.0" x2="363.6" y2="146.8" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="361.4" y1="165.7" x2="368.2" y2="164.2" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="364.1" y1="182.8" x2="371.1" y2="182.0" stroke="#00E5FF" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="363.0" y1="200.0" x2="375.0" y2="200.0" stroke="#7FF3FF" stroke-width="2.4" stroke-linecap="round" opacity="0.9"/>
+    <line x1="341.2" y1="281.5" x2="351.6" y2="287.5" stroke="#7FF3FF" stroke-width="2.4" stroke-linecap="round" opacity="0.9"/>
+    <line x1="281.5" y1="341.2" x2="287.5" y2="351.6" stroke="#7FF3FF" stroke-width="2.4" stroke-linecap="round" opacity="0.9"/>
+    <line x1="200.0" y1="363.0" x2="200.0" y2="375.0" stroke="#7FF3FF" stroke-width="2.4" stroke-linecap="round" opacity="0.9"/>
+    <line x1="118.5" y1="341.2" x2="112.5" y2="351.6" stroke="#7FF3FF" stroke-width="2.4" stroke-linecap="round" opacity="0.9"/>
+    <line x1="58.8" y1="281.5" x2="48.4" y2="287.5" stroke="#7FF3FF" stroke-width="2.4" stroke-linecap="round" opacity="0.9"/>
+    <line x1="37.0" y1="200.0" x2="25.0" y2="200.0" stroke="#7FF3FF" stroke-width="2.4" stroke-linecap="round" opacity="0.9"/>
+    <line x1="58.8" y1="118.5" x2="48.4" y2="112.5" stroke="#7FF3FF" stroke-width="2.4" stroke-linecap="round" opacity="0.9"/>
+    <line x1="118.5" y1="58.8" x2="112.5" y2="48.4" stroke="#7FF3FF" stroke-width="2.4" stroke-linecap="round" opacity="0.9"/>
+    <line x1="200.0" y1="37.0" x2="200.0" y2="25.0" stroke="#7FF3FF" stroke-width="2.4" stroke-linecap="round" opacity="0.9"/>
+    <line x1="281.5" y1="58.8" x2="287.5" y2="48.4" stroke="#7FF3FF" stroke-width="2.4" stroke-linecap="round" opacity="0.9"/>
+    <line x1="341.2" y1="118.5" x2="351.6" y2="112.5" stroke="#7FF3FF" stroke-width="2.4" stroke-linecap="round" opacity="0.9"/>
+  </g>
   <g filter="url(#glow)">
-    <circle cx="200" cy="200" r="150" stroke="#00E5FF" stroke-width="15"
-            stroke-dasharray="7 24.4" stroke-linecap="round" opacity="0.95">
-      <animateTransform attributeName="transform" type="rotate"
-        from="0 200 200" to="360 200 200" dur="18s" repeatCount="indefinite"/>
+    <circle cx="200" cy="200" r="150" stroke="#7FF3FF" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="60 883" opacity="0.9">
+      <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="360 200 200" dur="4.5s" repeatCount="indefinite"/>
     </circle>
   </g>
-
-  <!-- thin tick ring (fast counter-clockwise) -->
-  <circle cx="200" cy="200" r="168" stroke="#0A84FF" stroke-width="3"
-          stroke-dasharray="2 12" opacity="0.8">
-    <animateTransform attributeName="transform" type="rotate"
-      from="360 200 200" to="0 200 200" dur="9s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- middle coil ring (medium counter-clockwise) -->
   <g filter="url(#glow)">
-    <circle cx="200" cy="200" r="123" stroke="#00B4D8" stroke-width="9"
-            stroke-dasharray="3 15" opacity="0.9">
-      <animateTransform attributeName="transform" type="rotate"
-        from="360 200 200" to="0 200 200" dur="12s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="360 200 200" dur="26s" repeatCount="indefinite"/>
+    <g transform="translate(200.0 72.0) rotate(0.0)"><rect x="-11.0" y="-15.0" width="22" height="30" rx="3" fill="url(#coil)" stroke="#00E5FF" stroke-width="1.4"/><line x1="-8.0" y1="0" x2="8.0" y2="0" stroke="#7FF3FF" stroke-width="1" opacity="0.7"/></g>
+    <g transform="translate(275.2 96.4) rotate(36.0)"><rect x="-11.0" y="-15.0" width="22" height="30" rx="3" fill="url(#coil)" stroke="#00E5FF" stroke-width="1.4"/><line x1="-8.0" y1="0" x2="8.0" y2="0" stroke="#7FF3FF" stroke-width="1" opacity="0.7"/></g>
+    <g transform="translate(321.7 160.4) rotate(72.0)"><rect x="-11.0" y="-15.0" width="22" height="30" rx="3" fill="url(#coil)" stroke="#00E5FF" stroke-width="1.4"/><line x1="-8.0" y1="0" x2="8.0" y2="0" stroke="#7FF3FF" stroke-width="1" opacity="0.7"/></g>
+    <g transform="translate(321.7 239.6) rotate(108.0)"><rect x="-11.0" y="-15.0" width="22" height="30" rx="3" fill="url(#coil)" stroke="#00E5FF" stroke-width="1.4"/><line x1="-8.0" y1="0" x2="8.0" y2="0" stroke="#7FF3FF" stroke-width="1" opacity="0.7"/></g>
+    <g transform="translate(275.2 303.6) rotate(144.0)"><rect x="-11.0" y="-15.0" width="22" height="30" rx="3" fill="url(#coil)" stroke="#00E5FF" stroke-width="1.4"/><line x1="-8.0" y1="0" x2="8.0" y2="0" stroke="#7FF3FF" stroke-width="1" opacity="0.7"/></g>
+    <g transform="translate(200.0 328.0) rotate(180.0)"><rect x="-11.0" y="-15.0" width="22" height="30" rx="3" fill="url(#coil)" stroke="#00E5FF" stroke-width="1.4"/><line x1="-8.0" y1="0" x2="8.0" y2="0" stroke="#7FF3FF" stroke-width="1" opacity="0.7"/></g>
+    <g transform="translate(124.8 303.6) rotate(216.0)"><rect x="-11.0" y="-15.0" width="22" height="30" rx="3" fill="url(#coil)" stroke="#00E5FF" stroke-width="1.4"/><line x1="-8.0" y1="0" x2="8.0" y2="0" stroke="#7FF3FF" stroke-width="1" opacity="0.7"/></g>
+    <g transform="translate(78.3 239.6) rotate(252.0)"><rect x="-11.0" y="-15.0" width="22" height="30" rx="3" fill="url(#coil)" stroke="#00E5FF" stroke-width="1.4"/><line x1="-8.0" y1="0" x2="8.0" y2="0" stroke="#7FF3FF" stroke-width="1" opacity="0.7"/></g>
+    <g transform="translate(78.3 160.4) rotate(288.0)"><rect x="-11.0" y="-15.0" width="22" height="30" rx="3" fill="url(#coil)" stroke="#00E5FF" stroke-width="1.4"/><line x1="-8.0" y1="0" x2="8.0" y2="0" stroke="#7FF3FF" stroke-width="1" opacity="0.7"/></g>
+    <g transform="translate(124.8 96.4) rotate(324.0)"><rect x="-11.0" y="-15.0" width="22" height="30" rx="3" fill="url(#coil)" stroke="#00E5FF" stroke-width="1.4"/><line x1="-8.0" y1="0" x2="8.0" y2="0" stroke="#7FF3FF" stroke-width="1" opacity="0.7"/></g>
+  </g>
+  <g filter="url(#glow)">
+    <circle cx="200" cy="200" r="102" stroke="#00B4D8" stroke-width="6" stroke-dasharray="3 13" opacity="0.85">
+      <animateTransform attributeName="transform" type="rotate" from="360 200 200" to="0 200 200" dur="14s" repeatCount="indefinite"/>
     </circle>
   </g>
-
-  <!-- static bright inner ring -->
-  <circle cx="200" cy="200" r="100" stroke="#7FF3FF" stroke-width="4" opacity="0.85"/>
-
-  <!-- iconic triangle, pulsing glow -->
+  <circle cx="200" cy="200" r="86" stroke="#7FF3FF" stroke-width="3" opacity="0.9"/>
   <g filter="url(#glow)">
-    <polygon points="200,118 271,240 129,240" stroke="#00E5FF" stroke-width="6"
-             stroke-linejoin="round" fill="none">
-      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.4s" repeatCount="indefinite"/>
+    <polygon points="200,120 268,238 132,238" stroke="#00E5FF" stroke-width="5" stroke-linejoin="round" fill="none">
+      <animate attributeName="opacity" values="0.65;1;0.65" dur="2.4s" repeatCount="indefinite"/>
     </polygon>
+    <polygon points="200,120 268,238 132,238" stroke="#E6FBFF" stroke-width="1.5" stroke-linejoin="round" fill="none" opacity="0.8"/>
   </g>
-
-  <!-- core soft bloom -->
-  <circle cx="200" cy="200" r="62" fill="#00E5FF" filter="url(#softglow)" opacity="0.6">
-    <animate attributeName="opacity" values="0.35;0.75;0.35" dur="2s" repeatCount="indefinite"/>
+  <g opacity="0.9">
+    <animate attributeName="opacity" values="0.4;0.95;0.4" dur="2s" repeatCount="indefinite"/>
+    <rect x="198.4" y="150" width="3.2" height="30" rx="1.6" fill="url(#spoke)"/>
+    <rect x="198.4" y="150" width="3.2" height="30" rx="1.6" fill="url(#spoke)" transform="rotate(120 200 200)"/>
+    <rect x="198.4" y="150" width="3.2" height="30" rx="1.6" fill="url(#spoke)" transform="rotate(240 200 200)"/>
+  </g>
+  <circle cx="200" cy="200" r="60" fill="#00E5FF" filter="url(#soft)" opacity="0.6">
+    <animate attributeName="opacity" values="0.35;0.8;0.35" dur="2s" repeatCount="indefinite"/>
   </circle>
-
-  <!-- pulsing core -->
   <circle cx="200" cy="200" fill="url(#core)" filter="url(#glow)">
-    <animate attributeName="r" values="50;56;50" dur="2s" repeatCount="indefinite"
-             calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1" keyTimes="0;0.5;1"/>
+    <animate attributeName="r" values="46;54;46" dur="2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1" keyTimes="0;0.5;1"/>
   </circle>
-
-  <!-- hot white center -->
-  <circle cx="200" cy="200" r="20" fill="#E6FBFF">
-    <animate attributeName="opacity" values="0.85;1;0.85" dur="1.6s" repeatCount="indefinite"/>
+  <circle cx="200" cy="200" r="18" fill="#FFFFFF">
+    <animate attributeName="opacity" values="0.85;1;0.85" dur="1.5s" repeatCount="indefinite"/>
   </circle>
 </svg>

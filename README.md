@@ -27,7 +27,7 @@
 const pratham = {
   role: "Full-Stack & Mobile Engineer",
   pronouns: "he / him",
-  currently: "Architecting ASA ERP — a multi-branch jewellery ERP (web · desktop · mobile)",
+  currently: "Architecting large-scale ERP & commerce platforms (web · desktop · mobile)",
   stack: ["TypeScript", "Next.js", "Flutter", ".NET", "PostgreSQL", "Docker"],
   philosophy: "Ship end-to-end. Own the whole stack. Make it production-grade.",
   funFact: "Sometimes you gotta run before you can walk.",

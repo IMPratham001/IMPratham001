@@ -7,7 +7,7 @@
 
 <!-- Animated typing tagline -->
 <a href="https://github.com/IMPratham001">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=FFD700&center=true&vCenter=true&width=720&lines=Full-Stack+%2B+Mobile+Engineer;I+build+the+suits+%E2%80%94+web%2C+mobile+%26+backend;Genius.+Builder.+Problem-Solver.;Shipping+real+products%2C+end-to-end." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=900&color=FFD700&center=true&vCenter=true&width=760&lines=Booting+J.A.R.V.I.S.+...;All+systems+online.+Welcome+back%2C+sir.;Full-Stack+%2B+Mobile+Engineer;I+build+the+suits+%E2%80%94+web%2C+mobile+%26+backend;Genius.+Builder.+Problem-Solver.;At+your+service." alt="Typing SVG" />
 </a>
 
 <br/>
@@ -27,7 +27,7 @@
 const pratham = {
   role: "Full-Stack & Mobile Engineer",
   pronouns: "he / him",
-  currently: "Architecting large-scale ERP & commerce platforms (web · desktop · mobile)",
+  currently: "Building full-stack products across web, mobile & desktop",
   stack: ["TypeScript", "Next.js", "Flutter", ".NET", "PostgreSQL", "Docker"],
   philosophy: "Ship end-to-end. Own the whole stack. Make it production-grade.",
   funFact: "Sometimes you gotta run before you can walk.",
@@ -36,7 +36,7 @@ const pratham = {
 
 - 🛠️ &nbsp;I build complete products — from Postgres schemas to pixel-polished UIs and native mobile apps.
 - ⚡ &nbsp;Comfortable across **web (Next.js/React)**, **mobile (Flutter · React Native · Expo)**, and **backend (.NET · Node)**.
-- 🧠 &nbsp;Currently deep in **ERP architecture, POS systems, and offline-first sync**.
+- 🧠 &nbsp;Currently deep in **system architecture, real-time apps, and offline-first sync**.
 - 🤝 &nbsp;Open to collaboration on ambitious full-stack products.
 
 <br/>

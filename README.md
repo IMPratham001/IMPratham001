@@ -5,6 +5,11 @@
 
 <div align="center">
 
+<!-- Arc Reactor (animated SVG) -->
+<img src="https://raw.githubusercontent.com/IMPratham001/IMPratham001/main/assets/arc-reactor.svg" width="200" alt="arc reactor"/>
+
+<br/>
+
 <!-- Animated typing tagline -->
 <a href="https://github.com/IMPratham001">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=900&color=FFD700&center=true&vCenter=true&width=760&lines=Booting+J.A.R.V.I.S.+...;All+systems+online.+Welcome+back%2C+sir.;Full-Stack+%2B+Mobile+Engineer;I+build+the+suits+%E2%80%94+web%2C+mobile+%26+backend;Genius.+Builder.+Problem-Solver.;At+your+service." alt="Typing SVG" />

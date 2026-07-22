@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" fill="none" role="img" aria-label="Arc Reactor">
+  <defs>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF0"/>
+      <stop offset="30%" stop-color="#FFE97A"/>
+      <stop offset="62%" stop-color="#FFD700"/>
+      <stop offset="85%" stop-color="#E6A817"/>
+      <stop offset="100%" stop-color="#8B0000"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#E62429" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- breathing halo -->
+  <circle cx="200" cy="200" r="185" fill="url(#halo)">
+    <animate attributeName="opacity" values="0.45;1;0.45" dur="3.2s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="scale" additive="sum"
+      values="1 1;1.04 1.04;1 1" dur="3.2s" repeatCount="indefinite"
+      calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1" keyTimes="0;0.5;1"
+      begin="0s"/>
+  </circle>
+
+  <!-- outer segmented coil ring (slow clockwise) -->
+  <g filter="url(#glow)">
+    <circle cx="200" cy="200" r="150" stroke="#FFD700" stroke-width="15"
+            stroke-dasharray="7 24.4" stroke-linecap="round" opacity="0.95">
+      <animateTransform attributeName="transform" type="rotate"
+        from="0 200 200" to="360 200 200" dur="18s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- thin tick ring (fast counter-clockwise) -->
+  <circle cx="200" cy="200" r="168" stroke="#E62429" stroke-width="3"
+          stroke-dasharray="2 12" opacity="0.8">
+    <animateTransform attributeName="transform" type="rotate"
+      from="360 200 200" to="0 200 200" dur="9s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- middle coil ring (medium counter-clockwise) -->
+  <g filter="url(#glow)">
+    <circle cx="200" cy="200" r="123" stroke="#E6A817" stroke-width="9"
+            stroke-dasharray="3 15" opacity="0.9">
+      <animateTransform attributeName="transform" type="rotate"
+        from="360 200 200" to="0 200 200" dur="12s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- static bright inner ring -->
+  <circle cx="200" cy="200" r="100" stroke="#FFE97A" stroke-width="4" opacity="0.85"/>
+
+  <!-- iconic triangle, pulsing glow -->
+  <g filter="url(#glow)">
+    <polygon points="200,118 271,240 129,240" stroke="#FFD700" stroke-width="6"
+             stroke-linejoin="round" fill="none">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.4s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+
+  <!-- core soft bloom -->
+  <circle cx="200" cy="200" r="62" fill="#FFD700" filter="url(#softglow)" opacity="0.6">
+    <animate attributeName="opacity" values="0.35;0.75;0.35" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- pulsing core -->
+  <circle cx="200" cy="200" fill="url(#core)" filter="url(#glow)">
+    <animate attributeName="r" values="50;56;50" dur="2s" repeatCount="indefinite"
+             calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1" keyTimes="0;0.5;1"/>
+  </circle>
+
+  <!-- hot white center -->
+  <circle cx="200" cy="200" r="20" fill="#FFFDF0">
+    <animate attributeName="opacity" values="0.85;1;0.85" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+</svg>

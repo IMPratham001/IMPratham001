@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 60" width="900" height="60" fill="none" role="img" aria-label="divider">
+  <defs>
+    <linearGradient id="ln" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#E62429" stop-opacity="0"/>
+      <stop offset="14%" stop-color="#E62429" stop-opacity="0.55"/>
+      <stop offset="40%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#FFE97A"/>
+      <stop offset="60%" stop-color="#FFD700"/>
+      <stop offset="86%" stop-color="#E62429" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#E62429" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="dcore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF0"/>
+      <stop offset="45%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#8B0000"/>
+    </radialGradient>
+    <radialGradient id="dhalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="dglow" x="-40%" y="-400%" width="180%" height="900%">
+      <feGaussianBlur stdDeviation="1.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- base line -->
+  <rect x="20" y="29" width="860" height="2" fill="url(#ln)" filter="url(#dglow)">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- traveling sparks -->
+  <circle cy="30" r="2.6" fill="#FFFDF0" filter="url(#dglow)">
+    <animate attributeName="cx" values="60;840" dur="4.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1" keyTimes="0;1"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="4.5s" repeatCount="indefinite" keyTimes="0;0.1;0.9;1"/>
+  </circle>
+  <circle cy="30" r="2" fill="#E62429" filter="url(#dglow)">
+    <animate attributeName="cx" values="840;60" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.9;0.9;0" dur="6s" repeatCount="indefinite" keyTimes="0;0.1;0.9;1"/>
+  </circle>
+
+  <!-- center mini reactor -->
+  <circle cx="450" cy="30" r="24" fill="url(#dhalo)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="450" cy="30" r="15" stroke="#FFD700" stroke-width="3" stroke-dasharray="3 6" filter="url(#dglow)">
+    <animateTransform attributeName="transform" type="rotate" from="0 450 30" to="360 450 30" dur="9s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="450" cy="30" r="11" stroke="#E62429" stroke-width="1.5" stroke-dasharray="1 5">
+    <animateTransform attributeName="transform" type="rotate" from="360 450 30" to="0 450 30" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="450" cy="30" fill="url(#dcore)" filter="url(#dglow)">
+    <animate attributeName="r" values="6;8;6" dur="2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1" keyTimes="0;0.5;1"/>
+  </circle>
+  <circle cx="450" cy="30" r="2.6" fill="#FFFDF0">
+    <animate attributeName="opacity" values="0.85;1;0.85" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+</svg>

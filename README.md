@@ -46,6 +46,8 @@ const pratham = {
 
 <br/>
 
+<div align="center"><img width="100%" src="https://raw.githubusercontent.com/IMPratham001/IMPratham001/main/assets/reactor-divider.svg" alt="─────"/></div>
+
 <!-- ========================= TECH ARSENAL ========================= -->
 ## `>` The Arsenal
 
@@ -90,6 +92,8 @@ const pratham = {
 
 <br/>
 
+<div align="center"><img width="100%" src="https://raw.githubusercontent.com/IMPratham001/IMPratham001/main/assets/reactor-divider.svg" alt="─────"/></div>
+
 <!-- ========================= STATS ========================= -->
 ## `>` Suit Telemetry
 
@@ -102,6 +106,8 @@ const pratham = {
 
 </div>
 
+<div align="center"><img width="100%" src="https://raw.githubusercontent.com/IMPratham001/IMPratham001/main/assets/reactor-divider.svg" alt="─────"/></div>
+
 <!-- ========================= TROPHIES ========================= -->
 ## `>` Reactor Activity
 
@@ -112,6 +118,8 @@ const pratham = {
 </div>
 
 <br/>
+
+<div align="center"><img width="100%" src="https://raw.githubusercontent.com/IMPratham001/IMPratham001/main/assets/reactor-divider.svg" alt="─────"/></div>
 
 <!-- ========================= PROJECTS ========================= -->
 ## `>` Active Missions
@@ -165,6 +173,8 @@ A social experience app — connect, share, and stay in touch.
 
 <br/>
 
+<div align="center"><img width="100%" src="https://raw.githubusercontent.com/IMPratham001/IMPratham001/main/assets/reactor-divider.svg" alt="─────"/></div>
+
 <!-- ========================= SNAKE ========================= -->
 ## `>` Contribution Reactor
 
@@ -179,6 +189,8 @@ A social experience app — connect, share, and stay in touch.
 </div>
 
 <br/>
+
+<div align="center"><img width="100%" src="https://raw.githubusercontent.com/IMPratham001/IMPratham001/main/assets/reactor-divider.svg" alt="─────"/></div>
 
 <!-- ========================= CONNECT ========================= -->
 ## `>` Open Comms

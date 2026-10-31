@@ -1,0 +1,31 @@
+# Rebuilds assets/telemetry.svg (repo / language stats) from the GitHub API and commits it.
+name: Update Telemetry
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  push:
+    branches: [main]
+    paths: [scripts/telemetry.py]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  telemetry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate telemetry SVG
+        run: python scripts/telemetry.py "${{ github.repository_owner }}" "${{ secrets.GITHUB_TOKEN }}"
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/telemetry.svg
+          git diff --staged --quiet || git commit -m "chore: refresh telemetry" && git push

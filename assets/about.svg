@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="About Pratham">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#05090f"/><stop offset=".6" stop-color="#071a2b"/><stop offset="1" stop-color="#0a2a47"/></linearGradient>
+  <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E6FBFF"/><stop offset="1" stop-color="#00E5FF"/></linearGradient>
+  <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00E5FF"/><stop offset="1" stop-color="#0A84FF" stop-opacity=".2"/></linearGradient>
+  <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00E5FF" stop-opacity="0"/><stop offset=".5" stop-color="#00E5FF" stop-opacity=".2"/><stop offset="1" stop-color="#00E5FF" stop-opacity="0"/></linearGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#0A84FF" stroke-opacity=".13"/></pattern>
+  <radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#00E5FF" stop-opacity=".28"/><stop offset="1" stop-color="#00E5FF" stop-opacity="0"/></radialGradient>
+</defs><clipPath id="c"><rect width="1200" height="300" rx="14"/></clipPath><g clip-path="url(#c)"><rect width="1200" height="300" fill="url(#bg)"/><rect width="1200" height="300" fill="url(#grid)"/>
+<rect x="0" y="0" width="1200" height="38" fill="#0b1b2b"/>
+<circle cx="24" cy="19" r="6" fill="#ff5f56"/><circle cx="46" cy="19" r="6" fill="#ffbd2e"/><circle cx="68" cy="19" r="6" fill="#27c93f"/>
+<text x="600" y="24" text-anchor="middle" font-family="'Fira Code','Cascadia Code',Consolas,monospace" font-size="13" fill="#7fa6c4">pratham@portfolio:~ — whoami</text>
+<g font-family="'Fira Code','Cascadia Code',Consolas,monospace" font-size="16">
+<text x="30" y="76" fill="#3DDC97">$</text><text x="50" y="76" fill="#E6FBFF">whoami --verbose</text>
+<text x="30" y="116" fill="#c9d1d9"><tspan fill="#0A84FF">role</tspan>        <tspan fill="#7fa6c4">→</tspan> Full-Stack &amp; Mobile Engineer</text>
+<text x="30" y="144" fill="#c9d1d9"><tspan fill="#0A84FF">education</tspan>   <tspan fill="#7fa6c4">→</tspan> B.Tech, Computer Engineering · Marwadi University, Rajkot</text>
+<text x="30" y="172" fill="#c9d1d9"><tspan fill="#0A84FF">focus</tspan>       <tspan fill="#7fa6c4">→</tspan> System architecture · Real-time apps · Offline-first sync</text>
+<text x="30" y="200" fill="#c9d1d9"><tspan fill="#0A84FF">builds</tspan>      <tspan fill="#7fa6c4">→</tspan> Web (Next.js) · Mobile (Flutter, Expo) · Backend (.NET, Node)</text>
+<text x="30" y="228" fill="#c9d1d9"><tspan fill="#0A84FF">principle</tspan>   <tspan fill="#7fa6c4">→</tspan> Own the whole stack. Ship it. Make it production-grade.</text>
+<text x="30" y="268" fill="#3DDC97">$</text><rect x="50" y="254" width="10" height="18" fill="#00E5FF"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>
+</g></g><rect x=".5" y=".5" width="1199" height="299" rx="14" fill="none" stroke="#0A84FF" stroke-opacity=".45"/></svg>

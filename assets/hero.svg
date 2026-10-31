@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Pratham - Full-Stack and Mobile Engineer">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#05090f"/><stop offset=".6" stop-color="#071a2b"/><stop offset="1" stop-color="#0a2a47"/></linearGradient>
+  <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E6FBFF"/><stop offset="1" stop-color="#00E5FF"/></linearGradient>
+  <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00E5FF"/><stop offset="1" stop-color="#0A84FF" stop-opacity=".2"/></linearGradient>
+  <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00E5FF" stop-opacity="0"/><stop offset=".5" stop-color="#00E5FF" stop-opacity=".2"/><stop offset="1" stop-color="#00E5FF" stop-opacity="0"/></linearGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#0A84FF" stroke-opacity=".13"/></pattern>
+  <radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#00E5FF" stop-opacity=".28"/><stop offset="1" stop-color="#00E5FF" stop-opacity="0"/></radialGradient>
+</defs><clipPath id="c"><rect width="1200" height="340" rx="14"/></clipPath><g clip-path="url(#c)"><rect width="1200" height="340" fill="url(#bg)"/><rect width="1200" height="340" fill="url(#grid)"/>
+<ellipse cx="990" cy="170" rx="340" ry="230" fill="url(#glow)"/>
+<rect x="0" y="-90" width="1200" height="90" fill="url(#scan)"><animate attributeName="y" values="-90;360" dur="6s" repeatCount="indefinite"/></rect>
+<g transform="translate(990 170)" fill="none" stroke="#00E5FF">
+  <circle r="138" stroke-opacity=".15"/>
+  <circle r="116" stroke-opacity=".35" stroke-width="2" stroke-dasharray="3 11"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="50s" repeatCount="indefinite"/></circle>
+  <circle r="88" stroke-opacity=".6" stroke-width="3" stroke-dasharray="110 30 30 30"><animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="20s" repeatCount="indefinite"/></circle>
+  <circle r="60" stroke-opacity=".5" stroke-dasharray="2 6"/>
+  <circle r="44" stroke-opacity=".95" stroke-width="3"/>
+  <circle r="12" fill="#E6FBFF" stroke="none"><animate attributeName="opacity" values="1;.4;1" dur="2.4s" repeatCount="indefinite"/></circle>
+  <path d="M-138 0H-120M120 0H138M0 -138V-120M0 120V138" stroke-width="2"/>
+</g>
+<g stroke="#00E5FF" stroke-opacity=".7" stroke-width="2" fill="none"><path d="M20 46V20H46"/><path d="M1180 46V20H1154"/><path d="M20 294V320H46"/><path d="M1180 294V320H1154"/></g>
+<text x="64" y="72" font-family="'Fira Code','Cascadia Code',Consolas,monospace" font-size="14" fill="#00E5FF" letter-spacing="4">// SYSTEM ONLINE  ·  v2026</text>
+<g transform="translate(64 90)"><rect width="176" height="28" rx="14" fill="#00E5FF" fill-opacity=".08" stroke="#00E5FF" stroke-opacity=".5"/>
+<circle cx="17" cy="14" r="4" fill="#3DDC97"><animate attributeName="opacity" values="1;.2;1" dur="1.6s" repeatCount="indefinite"/></circle>
+<text x="32" y="19" font-family="'Fira Code','Cascadia Code',Consolas,monospace" font-size="12" fill="#c9d1d9">Open to build</text></g>
+<text x="62" y="200" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="92" font-weight="800" fill="url(#ink)" letter-spacing="-2">PRATHAM</text>
+<text x="64" y="244" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="26" fill="#c9d1d9" font-weight="300" letter-spacing="1">Full-Stack &amp; Mobile Engineer</text>
+<text x="64" y="288" font-family="'Fira Code','Cascadia Code',Consolas,monospace" font-size="14" fill="#7fa6c4">Next.js  ·  Flutter  ·  TypeScript  ·  PostgreSQL  ·  Offline-first systems</text>
+<rect x="64" y="304" width="220" height="2" fill="url(#edge)"><animate attributeName="width" values="40;320;40" dur="5s" repeatCount="indefinite"/></rect>
+</g><rect x=".5" y=".5" width="1199" height="339" rx="14" fill="none" stroke="#0A84FF" stroke-opacity=".45"/></svg>
